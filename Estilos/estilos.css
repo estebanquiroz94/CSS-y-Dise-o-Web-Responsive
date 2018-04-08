@@ -1,0 +1,125 @@
+html{
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #02010a;
+  font-family: 'Dancing Script', cursive;
+}
+#encabezado{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #5b7989;
+  border-radius: 14px 14px 0 0;
+  color:white;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  animation: slidein 1s;
+}
+#encabezado_izq{
+  margin-left: 20px;
+  margin-right: 20px;
+  text-shadow: 2px 2px #02010a;
+}
+#encabezado_der{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+header h2 a{color: white;}
+figcaption{text-align: center;}
+
+@-webkit-keyframes slidein {
+  0%{margin-top: 150%;}
+  60%{margin-top: -5%;}
+  100%{margin-top: 0%;}
+}
+
+.marco_central{
+  text-align: center;
+  background-color: #82c3a6;
+}
+
+.marco_secundario{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #d5c75f;
+  border: 1px;
+}
+
+img {
+    width:400px;
+    max-width: 100%;
+    height: auto;
+    width: auto/9;
+    box-shadow: 2px 2px #02010a;
+}
+
+#paisaje{
+  height: 250px;
+  border: 2px solid;
+  box-shadow: 2px 2px #82c3a6;
+}
+
+#retratos {
+  border: 2px solid;
+}
+
+#paisaje:hover {transform: rotate(10deg);}
+#retratos {border: 2px solid;}
+#retratos:hover {transform: translateX(20px) translateY(-5px);}
+
+.pie_pagina{
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h3 > img{
+  width: 20px;
+}
+
+.pie_pagina > div{
+  margin-left: 100px;
+}
+
+.contenido_paisajes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contenido_paisajes > div > img {
+  margin: 30px 40px 20px;
+  width: 300px;
+}
+
+#img1{
+  filter: blur(10px);
+  -webkit-filter: blur(3px);
+}
+
+#img2, #img4, #img6{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+#img3{
+  filter: sepia(90%);
+  -webkit-filter: sepia(90%);
+}
+
+footer div div{margin: auto;}
+h2{font-weight: normal;}
+
+@media (min-width: 900px) {
+	body {font-size: 16px;}
+}
+
+@media (max-width: 900px) {
+	html {font-size: 12px;}
+  a {font-size: 12px;}
+}
